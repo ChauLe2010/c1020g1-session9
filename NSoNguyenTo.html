@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrime(number) {
+        if(number<2)
+            return false;
+        return true;
+
+    }
+    alert(isPrime(4));
+
+
+
+
+    function displayEven(N) {
+        let count=0;
+        i=1;
+        while(count<N){
+            if(isPrime(i)==true){
+                count++;
+                document.write(i+" ");
+            }
+            i++;
+        }
+
+    }
+    let number;
+    do{
+        number=+prompt("Nhap so: ");
+    }while(isNaN(number)||number<0);
+    displayEven(number);
+
+
+</script>
+
+
+</body>
+</html>

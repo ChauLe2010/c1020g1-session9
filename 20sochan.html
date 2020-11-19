@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function displayEven(N) {
+        let count=0;
+        i=1;
+        while(count<N){
+            if(i%2==0){
+                count++;
+                document.write(i+" ");
+            }
+            i++;
+        }
+        // for(i=1;;i++){
+        //     if(i%2==0){
+        //         count++;
+        //         if(count>N)
+        //             break;
+        //         document.write(i+" ");
+        //     }
+        // }
+
+    }
+    let number;
+    do{
+         number=+prompt("Nhap so: ");
+    }while(isNaN(number)||number<0);
+    displayEven(number);
+</script>
+</body>
+</html>
